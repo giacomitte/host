@@ -1,0 +1,466 @@
+/* Global*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto
+}
+
+:root {
+    --primary: #a63cba;
+    --secondery: #d61b60;
+    --white: #FFF;
+    --dark: #3a3a3a;
+    --gray: #DDD;
+    --bg: #EEE
+}
+
+.header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 15px 0
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container .logo a {
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--white);
+    padding-top: 4px;
+    display: inline-block
+}
+
+.header .container .links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header .container .links ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header .container .links ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.header .container .links ul li a:hover {
+    color: var(--gray)
+}
+
+.header .container .links ul li:nth-of-type(6) {
+    background-color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.header .container .links ul li:nth-of-type(6) a {
+    color: var(--primary);
+}
+
+.header .container .links ul li a .fas {
+    position: relative;
+    top: 2px;
+    left: 3px
+}
+
+
+/* Start server section*/
+
+.server {
+    padding: 80px 0;
+}
+
+.server .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.server .container .server-info {
+    color: var(--dark);
+    flex-basis: 50%;
+}
+
+.server .container .server-info h1 {
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.server .container .server-info p {
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.server .container .server-info a {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary);
+    text-transform: capitalize;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.server .container .image {
+    flex-basis: 40%;
+}
+
+.server .container img {
+    width: 100%
+}
+
+.server .container .domain {
+    text-align: center;
+    color: var(--dark);
+    margin-top: 100px
+}
+
+.server .container .domain h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.server .container .domain p {
+    padding: 0 100px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 18px;
+    margin: 50px 0
+}
+
+.server .container .domain input {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.server .container .domain input::placeholder {
+    font-size: 16px;
+    color: rgb(165, 164, 164)
+}
+
+.server .container .domain a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 10px 40px;
+    position: relative;
+    left: -30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+/*Plan Section*/
+
+.plan {
+    background-color: whitesmoke;
+    padding: 50px 0;
+    color: var(--dark);
+}
+
+.plan header h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.plan .plan-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px
+}
+
+.plan .plan-part .plan-section {
+    background-color: white;
+    box-shadow: 0 0 10px #868686;
+    min-height: 400px;
+    position: relative;
+    border-radius: 0px 0px 15px 15px;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+    -ms-border-radius: 0px 0px 15px 15px;
+    -o-border-radius: 0px 0px 15px 15px;
+}
+
+.plan .plan-part .plan-section:before {
+    content: 'starter';
+    position: absolute;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    top: -60px;
+    left: 0;
+    border-radius: 20px 20px 0px 0px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    -moz-border-radius: 20px 20px 0px 0px;
+    -ms-border-radius: 20px 20px 0px 0px;
+    -o-border-radius: 20px 20px 0px 0px;
+}
+
+.plan .plan-part .plan-section:nth-of-type(2):before {
+    content: 'professional';
+    background-color: var(--secondery);
+}
+
+.plan .plan-part .plan-section:last-of-type:before {
+    content: 'prenium';
+}
+
+.plan .plan-part .plan-section span {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0
+}
+
+.plan .plan-part .plan-section:nth-of-type(2) span {
+    color: var(--secondery)
+}
+
+.plan .plan-part .plan-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.plan .plan-part .plan-section ul i {
+    color: green;
+    margin-right: 10px
+}
+
+.plan .plan-part .plan-section ul li {
+    padding-left: 40px;
+    margin-top: 15px
+}
+
+.plan .plan-part .plan-section a {
+    padding: 10px 40px;
+    margin-left: 40px;
+    color: var(--white);
+    background-color: var(--primary);
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.plan .plan-part .plan-section:nth-of-type(2) a {
+    background-color: var(--secondery);
+}
+
+.plan .guarantee {
+    text-align: center;
+    margin: 80px 0;
+    color: var(--dark);
+}
+
+.plan .guarantee h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.plan .guarantee p {
+    line-height: 1.7;
+    margin: 30px 0 50px;
+    font-size: 18px;
+    padding: 0 80px
+}
+
+.plan .guarantee a {
+    padding: 10px 40px;
+    margin-left: 40px;
+    color: var(--white);
+    background-color: var(--primary);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+/*Services Section*/
+
+.services {
+    padding: 80px 0;
+    color: var(--dark)
+}
+
+.services h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.services .serv-part {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px
+}
+
+.services .serv-part .serv {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+    box-shadow: 0 0 10px #DDD;
+}
+
+.services .serv-part .serv i {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: var(--primary)
+}
+
+.services .serv-part .serv {
+    line-height: 1.7;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* Client Services*/
+
+.client {
+    background-color: whitesmoke;
+    padding: 80px 0;
+    color: var(--dark);
+    text-align: center;
+}
+
+.client h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.client p {
+    line-height: 1.7;
+    font-size: 18px;
+    margin: 40px 0
+}
+
+.client span {
+    color: var(--secondery);
+    text-transform: capitalize;
+    font-size: 18px
+}
+
+.client ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.client ul li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.client ul li:first-of-type i {
+    color: var(--secondery)
+}
+
+
+/* Footer Section*/
+
+footer {
+    background-color: var(--primary);
+    padding: 100px 0
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .container .part h3 {
+    text-transform: capitalize;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+footer .container .part ul {
+    list-style: none;
+}
+
+footer .container .part ul li {
+    margin-bottom: 10px;
+}
+
+footer .container .part ul li a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+footer .container .part ul li a:hover {
+    color: #b7b4b4
+}
